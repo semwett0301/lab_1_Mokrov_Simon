@@ -1,0 +1,191 @@
+body {
+    background: #E0F2F7;
+    text-align: center;
+
+    font-family: "Gotham Pro";
+}
+.submit_and_get_result {
+    clear: both;
+}
+
+h1 {
+    font-family: inherit;
+    color: black;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+h1.student_name {
+    margin-bottom: -25px;
+}
+
+.coordinates_picture {
+    margin-bottom: 20px;
+}
+
+.form_with_coordinates {
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+form > div {
+    margin-bottom: 20px;
+}
+
+.form_with_coordinates > div:nth-child(4) {
+    margin-bottom: 30px;
+}
+
+form div .coordinate_name {
+    font-size: 18px;
+    font-family: inherit;
+
+    margin-bottom: 7px;
+}
+
+.submit_button {
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.coordinate_name span{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.coordinate_input input[type="checkbox"] + span {
+    vertical-align: top;
+}
+
+input[name="x_coordinate"] {
+    width: 200px;
+    height: 27px;
+
+    text-align: inherit;
+
+    border-radius: 5px;
+    border: 1px solid #6E6E6E;
+
+    font-family: inherit;
+    font-size: 16px;
+}
+
+input[name="x_coordinate"]:focus {
+    outline: 0;
+}
+
+select[name="r_coordinate"] {
+    width: 60px;
+    height: 27px;
+
+    border-radius: 5px;
+
+    padding-left: 36px;
+    user-select: none;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    box-sizing: content-box;
+}
+
+select[name="r_coordinate"]:focus {
+    outline: 0;
+}
+
+input[name="coordinates_button"] {
+    width: 230px;
+    height: 55px;
+
+    background: linear-gradient(180deg, #3F69FF 0%, #3F69FF 100%);
+    border-radius: 42px;
+    border: 0;
+
+    font-family: Gotham Pro;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer p span:last-child{
+    font-weight: bold;
+}
+
+.x_error, .y_error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 0;
+    position: relative;
+    top: 5px;
+}
+
+.result_block, .past_results {
+    border-radius: 7px;
+    background: white;
+
+    width: 400px;
+    margin: 0 auto;
+
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: right;
+    height: 40px;
+
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+
+.result_table td:first-child {
+    width: 80%;
+    font-weight: 400;
+    text-align: left;
+
+    padding-left: 10px;
+}
+
+.result_table tr:nth-child(2n) {
+    background-color: #f4f7fc;
+}
+
+.result_table tr:last-child td {
+    text-align: center;
+    font-weight: 700;
+}
+
+.past_results {
+    position: absolute;
+    right: 20px;
+    top: 0;
+
+    width: 500px;
+
+    display: none;
+}
+
+.past_table tr {
+    height: 40px;
+}
+
+.past_table thead tr {
+    background-color: #f4f7fc;
+    border-radius: 7px;
+}
+
+.past_table td {
+    font-weight: 400;
+    text-align: center;
+}
+
+.past_table td:first-child, .past_table td:nth-child(2), .past_table td:nth-child(3) {
+    padding-left: 10px;
+}

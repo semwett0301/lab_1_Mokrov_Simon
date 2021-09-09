@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_1</title>
+
+    <link rel="stylesheet" href="fonts/GothamPro/stylesheet.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+    <h1 class="student_name">Мокров Семён Андреевич P3215</h1>
+    <h1 class="lab_option">Вариант №15022</h1>
+</header>
+<main>
+    <div class="coordinates_picture"><img src="img/area.png"></div>
+    <form class="form_with_coordinates" id="form_with_coordinates">
+        <div class="past_results">
+            <table class ="past_table">
+                <thead>
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>R</th>
+                    <th>Время выполнения</th>
+                    <th>Точка попала?</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="x_coordinate">
+            <div class="coordinate_name"><span>Введите x-координату:</span></div>
+            <div class="coordinate_input">
+                <input id="x_coordinate" type="text" name="x_coordinate" placeholder="(-5, ... ,5)" autocomplete="off">
+            </div>
+            <div class="x_error"></div>
+        </div>
+        <div class="y_coordinate">
+            <div class="coordinate_name"><span>Введите y-координату:</span></div>
+            <div class="coordinate_input">
+                <input type="checkbox" name="y_coordinate" value="-5"><span>-5</span>
+                <input type="checkbox" name="y_coordinate" value="-4"><span>-4</span>
+                <input type="checkbox" name="y_coordinate" value="-3"><span>-3</span>
+                <input type="checkbox" name="y_coordinate" value="-2"><span>-2</span>
+                <input type="checkbox" name="y_coordinate" value="-1"><span>-1</span>
+                <input type="checkbox" name="y_coordinate" value="0"><span>0</span>
+                <input type="checkbox" name="y_coordinate" value="1"><span>1</span>
+                <input type="checkbox" name="y_coordinate" value="2"><span>2</span>
+                <input type="checkbox" name="y_coordinate" value="3"><span>3</span>
+            </div>
+            <div class="y_error"></div>
+        </div>
+        <div class="r_coordinate">
+            <div class="coordinate_name"><span>Введите R:</span></div>
+            <div class="coordinate_input">
+                <select name="r_coordinate">
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="submit_and_get_result">
+            <div class="submit_button">
+                <input type="submit" id="coordinates_button" name="coordinates_button" value="Проверить точку">
+            </div>
+            <div class="result_block"></div>
+        </div>
+    </form>
+</main>
+<footer>
+    <p><span>Текущее время: </span><span class="timer"></span></p>
+</footer>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
