@@ -122,6 +122,7 @@ function addLastResult() {
         let y = document.querySelector('.y').innerHTML;
         let r = document.querySelector('.r').innerHTML;
         let result_time = document.querySelector('.result_time').innerHTML;
+        let tmp_time = document.querySelector('.tmp_time').innerHTML;
         let hit = document.querySelector('.hit').innerHTML;
 
         if (hit === 'Точка лежит в области') {
@@ -135,26 +136,12 @@ function addLastResult() {
             '                <td>' + y + '</td>\n' +
             '                <td>' + r + '</td>\n' +
             '                <td>' + result_time + '</td>\n' +
+            '                <td>' + tmp_time + '</td>\n' +
             '                <td>' + hit + '</td>\n' +
             '            </tr>'
     }
 
     if(document.querySelectorAll('.past_results tbody tr').length === 1) {
-        $('.past_results').slideDown(300);
+        $('.past_results').fadeIn(300);
     }
-}
-
-function timer() {
-    requestTimer = ajaxRequest();
-
-    requestTimer.open("POST", "functions/timer.php", true)
-    requestTimer.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-    requestTimer.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            if (this.responseText != null) {
-                document.querySelector('.timer').innerHTML = this.responseText;
-            }
-        }
-    }
-    requestTimer.send("timer=true")
 }

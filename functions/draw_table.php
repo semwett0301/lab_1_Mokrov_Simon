@@ -1,4 +1,6 @@
 <?php
+include "timer.php";
+
 function drawTable($x, $y, $r, $hit, $time) {
     echo "<table class=\"result_table\">
                     <tbody>
@@ -17,6 +19,10 @@ function drawTable($x, $y, $r, $hit, $time) {
                         <tr>
                             <td>Время выполнения скрипта</td>
                             <td class=\"result_time\">" . round((microtime(true) - $time) * 1000000) ." мкс"."</td>
+                        </tr>
+                        <tr>
+                            <td>Текущее время</td>
+                            <td class=\"tmp_time\">".timer()."</td>
                         </tr>
                         <tr>
                             <td colspan=2 class=\"hit\">".$hit."</td>

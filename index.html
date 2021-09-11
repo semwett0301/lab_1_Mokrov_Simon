@@ -15,22 +15,6 @@
 <main>
     <div class="coordinates_picture"><img src="img/area.png"></div>
     <form class="form_with_coordinates" id="form_with_coordinates">
-        <div class="past_results">
-            <table class ="past_table">
-                <thead>
-                <tr>
-                    <th>X</th>
-                    <th>Y</th>
-                    <th>R</th>
-                    <th>Время выполнения</th>
-                    <th>Точка попала?</th>
-                </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
         <div class="x_coordinate">
             <div class="coordinate_name"><span>Введите x-координату:</span></div>
             <div class="coordinate_input">
@@ -72,10 +56,24 @@
             <div class="result_block"></div>
         </div>
     </form>
+    <div class="past_results">
+        <table class="past_table">
+            <thead>
+            <tr>
+                <th>X</th>
+                <th>Y</th>
+                <th>R</th>
+                <th>Время выполнения</th>
+                <th>Время</th>
+                <th>Точка попала?</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
 </main>
-<footer>
-    <p><span>Текущее время: </span><span class="timer"></span></p>
-</footer>
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/script.js"></script>

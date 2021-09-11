@@ -1,5 +1,6 @@
 <?php
-if (isset($_POST['timer'])) {
+function timer()
+{
     date_default_timezone_set('Europe/Moscow');
-    echo date("H:i:s");
+    return date("H:i:s");
 }
