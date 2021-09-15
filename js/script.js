@@ -3,7 +3,6 @@ document.getElementById('form_with_coordinates').onsubmit = function (event) {
     validate();
 };
 
-timer();
 setInterval(timer, 1000)
 
 function validate() {
