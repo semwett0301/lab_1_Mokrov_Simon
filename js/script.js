@@ -3,8 +3,6 @@ document.getElementById('form_with_coordinates').onsubmit = function (event) {
     validate();
 };
 
-setInterval(timer, 1000)
-
 function validate() {
     let x_coordinate = check_and_return_X();
     let y_coordinate = check_and_return_Y();
