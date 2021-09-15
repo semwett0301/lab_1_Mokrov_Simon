@@ -71,6 +71,12 @@ input[name="x_coordinate"] {
     font-size: 16px;
 }
 
+input[name="x_coordinate"]::placeholder {
+    font-family: inherit;
+    color: #757575;
+    font-weight: 400;
+}
+
 input[name="x_coordinate"]:focus {
     outline: 0;
 }
