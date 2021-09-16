@@ -25,7 +25,7 @@ function onRequest(param) {
     let request = ajaxRequest()
 
     request.open("POST", "functions/checkPoint.php", true)
-    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded", "charset=UTF-8")
     request.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             if (this.responseText != null) {
